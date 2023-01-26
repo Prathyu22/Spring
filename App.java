@@ -3,6 +3,13 @@ package com.navin.Telusko;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
+//Types of Configurations:
+// 1. Xml Based Configuration.
+// 2. Annotation based configuration.
+// 3. Java configuration.
+
+//Here we used annotation based configuration.
+
 public class App 
 {
     public static void main( String[] args )
@@ -19,9 +26,8 @@ public class App
     	//In general, getBean() gives us the object so that we type cast it to Vehicle here.
     	
     	
-    	//When we use .xml files, there is no need to recompile the java file. 
-    	// Only we can change the requirements in the .xml file. 
-    	Vehicle obj = (Vehicle) context.getBean("vehicle"); //new Car();
+    	//Here we are using annotation based configuration. So, here we should mention the class name in getBean(). 
+    	Vehicle obj = (Vehicle) context.getBean("car"); //new Car();
         obj.drive();
         
         
