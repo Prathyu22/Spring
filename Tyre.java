@@ -15,4 +15,9 @@ public class Tyre {
 	public String toString() {
 		return "Tyre [brand=" + brand + "]";
 	}
+
+	public Tyre(String brand) {
+		super();
+		this.brand = brand;
+	}
 }
