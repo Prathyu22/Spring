@@ -15,5 +15,11 @@
 	<!-- <bean id="vehicle" class="com.navin.Telusko.Car">
 	</bean>  -->
 	
+	<!-- xml based configuration for tyre. -->
+	<bean id="tyre" class="com.navin.Telusko.Tyre">
+		<property name="brand" value="MRF"> </property>
+	</bean>
+	
+	
 
 </beans>

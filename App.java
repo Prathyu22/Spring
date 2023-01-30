@@ -27,9 +27,11 @@ public class App
     	
     	
     	//Here we are using annotation based configuration. So, here we should mention the class name in getBean(). 
-    	Vehicle obj = (Vehicle) context.getBean("car"); //new Car();
-        obj.drive();
+    	//Vehicle obj = (Vehicle) context.getBean("car"); //new Car();
+        //obj.drive();
         
+    	Tyre t = (Tyre) context.getBean("tyre");
+    	System.out.println(t);
         
     }
 }
