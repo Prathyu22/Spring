@@ -1,6 +1,7 @@
 package com.navin.SpringAnno;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.stereotype.Component;
 
@@ -10,6 +11,7 @@ import org.springframework.stereotype.Component;
 @ComponentScan(basePackages="com.navin.SpringAnno") // This scans all the components in your project in the specific pkg. 
 public class Samsung {
 	@Autowired
+	@Qualifier("mediaTek") //Instead of using @Primary we can use @Qualifier.
 	MobileProcessor cpu;
 	
 	public MobileProcessor getCpu() {

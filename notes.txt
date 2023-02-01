@@ -1,0 +1,5 @@
+@Component -- For the object.
+@Autowired -- Search for the object itself.
+@Qualifier -- To match the class name.
+@Configuration -- It is a configuration file for us like xml file.
+@ComponentScan -- It will scan all the components for us.
